@@ -1,0 +1,185 @@
+* {
+    font-family: "Roboto", sans-serif;
+    background-color: ;
+}
+body {
+    background-color: #101112;
+    width: 375px;
+    height: 812px;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card {
+    background: url("assets/map.png") center/cover,
+            linear-gradient(
+                90deg,
+                rgba(252, 88, 45, 1) 0%,
+                rgba(239, 65, 50, 1) 44%,
+                rgba(215, 17, 60, 1) 100%
+            ); 
+    width: 324.5px;
+    height: 198px;
+    display: grid;
+    grid-template: repeat(5, 35px) / repeat(4, 1fr);
+    grid-template-areas:
+        "visa . . world"
+        "card-number card-number . ."
+        "number number number number"
+        "expiration . cvc ."
+        "date . cvc-no .";
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+    padding-left: 20px;
+    border-radius: 13px;
+}
+.item-one {
+    grid-area: visa;
+    /* justify-self: center; */
+    align-self: end;
+}
+.item-two {
+    grid-area: world;
+    color: #711220;
+    font-size: 0.8em;
+    margin-top: 30px;
+    margin-left: 20px;
+    align-self: center;
+}
+.item-three {
+    grid-area: card-number;
+    font-size: 0.8em;
+    justify-self: start;
+    color: #711220;
+    padding-top: 25px;
+}
+.item-four {
+    grid-area: number;
+    font-size: 1.65em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 15px;
+}
+.item-five {
+    grid-area: expiration;
+    font-size: 0.8em;
+    margin-top: 28px;
+    color: #711220;
+}
+.item-six {
+    grid-area: cvc;
+    font-size: 0.8em;
+    margin-top: 28px;
+    color: #711220;
+}
+.item-seven {
+    grid-area: date;
+    font-size: 0.8em;
+    color: white;
+}
+.item-eight {
+    grid-area: cvc-no;
+    font-size: 0.8em;
+    color: white;
+}
+.button {
+    z-index: 10;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: #5a6065;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+    
+}
+.purchase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.product {
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+    
+}
+.shoes img {
+    margin-top: -70px;
+    margin-bottom: -25px;
+    transition: 1s ease;
+}
+.shoes img:hover {
+    -webkit-transform: scale(1.13);
+    -ms-transform: scale(1.13);
+    transform: scale(1.13);
+    transition: 1s ease;
+    cursor: pointer;
+}
+.product-desc {
+    margin-left: 15px;
+    padding-left: 10px;
+}
+.product-type {
+    color: #5a6065;
+    margin-bottom: 0px;
+}
+strong {
+    font-size: 2em;
+    font-weight: bold;
+}
+.price {
+    font-size: 1.5em;
+    margin-top: 0px;
+}
+.cont-btn {
+    transform: rotateY(180deg);
+    align-self: center;
+    justify-self: center;
+    filter: brightness(2);
+    background: linear-gradient(
+        90deg,
+        rgba(248, 83, 47, 1) 0%,
+        rgba(236, 58, 52, 1) 44%,
+        rgba(230, 47, 54, 1) 100%
+    );
+    border-radius: 50%;
+    width: 2em;
+    padding: 1.25em;
+    margin-left: 40px;
+    transition: 1s ease;
+}
+.cont-btn:hover {
+    cursor: pointer;
+    width: 2.3em;
+    background: linear-gradient(
+        90deg,
+        rgba(247, 66, 26, 1) 0%,
+        rgba(235, 35, 28, 1) 44%,
+        rgba(228, 23, 30, 1) 100%
+    );
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+    transition: 1s ease-in-out;s
+}
+.purch-sum {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 40px;
+}
